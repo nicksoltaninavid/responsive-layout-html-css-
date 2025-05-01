@@ -1,0 +1,136 @@
+/* ریست ساده */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: #222c2a;
+  background-color: #f3eed9;
+  line-height: 1.6;
+}
+
+.hero {
+  background-color: #f3eed9;
+  min-height: 41.25rem; /* 660px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.container {
+  max-width: 1128px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.intro-text {
+  font-size: 1.125rem; /* 18px */
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  font-family: "Roboto", sans-serif;
+  color: #222c2a;
+  line-height: 3.5;
+}
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3.75rem; /* 60px */
+  color: #824936;
+  max-width: 20ch;
+  margin: 0 auto;
+  line-height: 1;
+}
+
+.spaced span {
+  margin-right: 1rem;
+}
+
+/* Intro Section */
+.intro-section {
+  background-color: #fff;
+  padding: 4rem 1rem;
+  /* display: grid; 
+     gap: 2rem;  */
+  /* max-width: 1128px; */
+  /* margin: 0 auto; */
+}
+.intro-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.25rem;
+  color: #824936;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.two-columns {
+  display: grid;
+  gap: 6rem;
+  padding: 0 4rem;
+}
+.two-columns p {
+  font-size: 1.125rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.7;
+}
+@media (min-width: 768px) {
+  .two-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.feature-section {
+  color: white;
+  padding: 4rem 1rem;
+}
+.feature-section.dark {
+  background-color: #222c2a;
+}
+
+.feature-section.brown {
+  background-color: #824936;
+}
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  /* background-color: red; */
+}
+.feature-card.reverse {
+  /* flex-direction: column-reverse; */
+}
+.feature-text {
+  max-width: 27rem;
+  margin-top: .5rem;
+}
+.feature-text h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  
+}
+.feature-text p {
+  font-size: 1.125rem;
+  font-family: 'Roboto', sans-serif;
+ 
+}
+.img{
+  width: 100%;
+  max-width: 27rem; 
+  height: auto;
+
+}
+  /* Desctop*/
+  @media (min-width: 768px) {
+    .feature-card{
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .img{
+      max-width: 27rem;
+      height: auto;
+    }
+    
+  }
